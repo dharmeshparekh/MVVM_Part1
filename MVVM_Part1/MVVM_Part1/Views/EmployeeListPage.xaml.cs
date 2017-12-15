@@ -39,6 +39,8 @@ namespace MVVM_Part1.Views
             employeelist.IsActive = !employeelist.IsActive;
 
             employeelistsListView.SelectedItem = null;
+
+            Navigation.PushAsync(new EmployeeDetails(employeelist));
                         
         }
     }
